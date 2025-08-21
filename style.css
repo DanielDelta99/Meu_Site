@@ -20,24 +20,26 @@ body {
 section {
     width: 100vw;
     min-height: 100vh;
-    padding: 100px;
+    padding: 20px;
+
+    scroll-margin-top: 70px;
 
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-@media (max-height: 768px) {
+@media (max-height: 770px) {
     section {
         padding: 70px;
     }
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 770px) {
     section {
         padding: 100px 15px;
     }
-}
+}*/
 
 /*header*/
 
@@ -71,7 +73,7 @@ header nav ul {
     z-index: 1;
 }
 
-.itens,a:hover {
+.itens > a:hover {
     color: #00f7ff;
     text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
 }
@@ -79,6 +81,7 @@ header nav ul {
 /*Inicio*/
 
 .foto {
+    padding-top: 5%;
     padding-bottom: 60px;
     z-index: 10;
     filter: drop-shadow(0 0 80px rgba(0,247,255,0.3));
@@ -101,7 +104,7 @@ header nav ul {
     z-index: 10;
 }
 
-@media (max-width: 550px),(max-height: 650px) {
+@media (max-width: 650px),(max-height: 650px) {
     .foto img {
         width: 250px;
     }
@@ -178,11 +181,9 @@ header nav ul {
     font-size: 16px;
 }
 
-.visitar {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 20px 20px;
+.destaque {
+    color: #00f7ff;
+    font-weight: bold;
 }
 
 .projeto:hover {
@@ -221,8 +222,10 @@ header nav ul {
 }
 
     .projeto {
-        width: 400px;
-        height: 500px;
+        aspect-ratio: 4 / 5;
+        width: 100%;
+        height: auto;
+        max-width: 400px;
     }
 
     .projeto-titulo, .projeto-descricao {

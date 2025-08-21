@@ -1,0 +1,38 @@
+* {
+    font-size: 14px;
+}
+
+.titulo {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+section {
+    min-height: auto;
+    padding: 20px 1px;
+
+    scroll-margin-top: 70px;
+}
+
+header nav ul {
+    gap: 20px;
+}
+
+#inicio, #contatos {
+    min-height: 100vh;
+    padding: 70px 0 20px 0;
+}
+
+
+
+.projeto {
+    aspect-ratio: 4 / 5;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.contatos-list {
+    flex-direction: column;
+    align-items: center;
+}
