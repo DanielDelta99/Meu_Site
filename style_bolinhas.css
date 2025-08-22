@@ -1,0 +1,62 @@
+/*Circulos*/
+
+.tech-circle {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 1900px;
+    height: 900px;
+    gap: 1px;
+    z-index: 10;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(1, 227, 235, 0.2);
+    z-index: 0;
+    
+}
+
+.circle:nth-child(1){
+    grid-column: 2;
+    grid-row: 2 ;
+    width: 200px;
+    height: 200px;
+}
+
+.circle:nth-child(2){
+    grid-column: 4;
+    grid-row: 4 ;
+    width: 150px;
+    height: 150px;
+}
+
+.circle:nth-child(3){
+    grid-column: 3;
+    grid-row: 7 ;
+    width: 100px;
+    height: 100px;
+}
+
+.circle:nth-child(4){
+    grid-column: 10;
+    grid-row: 3 ;
+    width: 250px;
+    height: 250px;
+}
+
+.circle:nth-child(5){
+    grid-column: 12;
+    grid-row: 2 ;
+    width: 120px;
+    height: 120px;
+}
+
+.circle:nth-child(6){
+    grid-column: 11;
+    grid-row: 7 ;
+    width: 180px;
+    height: 180px;
+}
