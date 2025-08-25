@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Estilização Geral*/
 *{
     margin: 0;
     padding: 0;
@@ -12,11 +13,13 @@ body {
     font-size: 16px;
 }
 
+/*Estilização dos titulos*/
 .titulo {
     font-size: 40px;
     padding-bottom: 30px;
 }
 
+/*Estilização generica das seções*/
 section {
     width: 100vw;
     min-height: 100vh;
@@ -30,20 +33,14 @@ section {
     z-index: 10;
 }
 
+/*Ajuste de padding para telas com altura menor*/
 @media (max-height: 770px) {
     section {
         padding: 70px;
     }
 }
 
-/*@media (max-width: 770px) {
-    section {
-        padding: 100px 15px;
-    }
-}*/
-
-/*header*/
-
+/*Estilização do cabeçalho e menu de navegação*/
 header {
     position: fixed;
     width: 100%;
@@ -52,6 +49,7 @@ header {
     z-index: 1000;
 }
 
+/*Estilização do menu*/
 header > nav {
     display: flex;
     justify-content: center;
@@ -68,6 +66,7 @@ header nav ul {
     list-style: none;
     
 }
+/*Estilização dos itens do menu*/
 .itens, a{
     color: #fff;
     text-decoration: none;
@@ -79,11 +78,12 @@ header nav ul {
     text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
 }
 
-/*Inicio*/
+/*Estilização da Seção Inicio*/
 .inicio {
     position: relative;
 }
 
+/*Estilização da imagem*/
 .foto {
     padding-top: 5%;
     padding-bottom: 60px;
@@ -98,6 +98,7 @@ header nav ul {
     z-index: 10;
 }
 
+/*Estilização do nome (titulo)*/
 .nome {
     font-family: "Orbitron", sans-serif;
     font-size: 40px;
@@ -108,6 +109,7 @@ header nav ul {
     z-index: 10;
 }
 
+/*Ajustes para telas menores*/
 @media (max-width: 650px),(max-height: 650px) {
     .foto img {
         width: 250px;
@@ -123,7 +125,7 @@ header nav ul {
     }
 }
 
-/*Sobre mim*/
+/*Estilização da Seção Sobre mim*/
 .sobre-div {
     filter: drop-shadow(0 0 30px rgba(0,247,255,0.3));
     background-color: #1a1a2e;
@@ -135,10 +137,16 @@ header nav ul {
     max-width: 900px;
     margin: 0 auto;
     line-height: 1.7;
-
 }
 
-/*Formação*/
+/*Estilização da lista dentro da seção*/
+.sobre-div ul{
+    padding-left: 1rem;
+    margin-left: 0;
+    list-style-position: outside;
+}
+
+/* Estilização da Seção Formação*/
 .formacao-div {
     filter: drop-shadow(0 0 30px rgba(0,247,255,0.3));
     background-color: #1a1a2e;
@@ -150,10 +158,15 @@ header nav ul {
     max-width: 900px;
     margin: 0 auto;
     line-height: 1.7;
-
+}
+/*Estilização da lista dentro da seção*/
+.formacao-div ul{
+    padding-left: 1rem;
+    margin-left: 0;
+    list-style-position: outside;
 }
 
-/*Projetos*/
+/*Estilização da Seção Projetos*/
 .projetos-div {
     display: flex;
     justify-content: center;
@@ -161,6 +174,7 @@ header nav ul {
     gap: 30px;
 }
 
+/*Estilização do Projeto geral*/
 .projeto {
     display: flex;
     flex-direction: column;
@@ -174,11 +188,13 @@ header nav ul {
     z-index: 10;
 }
 
+/*Estilização da imagem do projeto*/
 .projeto img {
     z-index: 1;
     border-radius: 20px 20px 0 0;
 }
 
+/*Estilização do titulo e descrição do projeto*/
 .projeto-titulo, .projeto-descricao {
     padding: 10px 20px;
     text-align: justify;
@@ -195,6 +211,7 @@ header nav ul {
     transition: all 0.3s ease-in-out;
 }
 
+/*Ajustes do projeto para telas menores*/
 @media (max-width: 1350px) {
     .projeto {
         width: 300px;
@@ -238,8 +255,8 @@ header nav ul {
 }
 }
 
-/*Contatos*/
-.contatos-div {
+/*Estilização da Seção Contatos*/
+.contatos-div, .contatos-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,7 +271,51 @@ header nav ul {
     max-width: 600px;
 }   
 
+/*Estilização do Formulario*/
+.contatos-form > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+/*Estilização dos Inputs*/
+.campo-form {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0f0f1e;
+    border: 1px solid #00f7ff;
+
+    color: #ffffff;
+}
+
+/*Estilização dos botões*/
+.button-form {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button-form button {
+    background: #00f7ff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-form button:hover {
+    transform: scale(1.07);
+    filter: drop-shadow(0 0 30px rgba(0,247,255,0.3));
+    transition: all 0.3s ease-in-out;
+}
+
+/*Estilização da lista de Redes Sociais*/
 .contatos-list {
     display: flex;
     gap: 30px;
 }
+
